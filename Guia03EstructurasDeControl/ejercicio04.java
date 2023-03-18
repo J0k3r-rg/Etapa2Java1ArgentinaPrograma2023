@@ -1,4 +1,4 @@
-package Guia03;
+package Guia03EstructurasDeControl;
 
 import java.util.Scanner; 
 
