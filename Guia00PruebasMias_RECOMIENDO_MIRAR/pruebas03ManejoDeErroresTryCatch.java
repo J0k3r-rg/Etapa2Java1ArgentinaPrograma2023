@@ -74,25 +74,45 @@ public class pruebas03ManejoDeErroresTryCatch {
         } while (true);
         System.out.println("Dato ingresado CORRECTO...");
         
+        //esta parte del codigo esta mejorada! ver las versiones anteriores
+        //para ver las modificaciones que se le hicieron
+        
         System.out.println("*******************************************************************************");
         System.out.println("****                   VALIDAMOS DATOS CON TRY/CATCH ...                   ****");
         System.out.println("*******************************************************************************");
-        boolean continuar;
+        int num;
         do {
             try {
-                continuar = false;
-                System.out.print("ingrese un numero entero: ");
+                System.out.print("ingrese un numero ENTERO: ");
                 // Nota importante... puede ser para int, double, float y cualquier tipo de variable
                 // tendriamos que probar con char aver que sucede, es cuestion de modificar algunas
                 // cosas
-                int num = leer.nextInt();
+                num = leer.nextInt();
+                break;
             } catch (InputMismatchException ex) {
                 System.out.println("HA INGRESADO UN DATO INCORRECTO");
                 leer.nextLine();
-                continuar = true;
             }
-        } while (continuar);
+        } while (true);
         System.out.println("dato ingresado CORRECTO...");
+        System.out.println(num);
+        leer.nextLine();
+        
+        
+        double num2;
+        do {
+            try {
+                System.out.print("ingrese un numero REAL: ");
+                num2 = leer.nextDouble();
+                break;
+            } catch (InputMismatchException ex) {
+                System.out.println("HA INGRESADO UN DATO INCORRECTO");
+                leer.nextLine();
+            }
+        } while (true);
+        System.out.println("dato ingresado CORRECTO...");
+        System.out.println(num2);
+        leer.nextLine();
     }
 
     //AQUI DECLARAMOS NUESTRAS FUNCIONES PARA VALIDAR DATOS 
