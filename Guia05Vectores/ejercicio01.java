@@ -13,9 +13,8 @@ public class ejercicio01 {
             numeros[i]=i;
         }
         
-        for (int i = numeros.length; i > 0; i--) {
+        for (int i = numeros.length-1; i > 0; i--) {
             System.out.print("["+numeros[i]+"]");
-            
         }
     }
 }
