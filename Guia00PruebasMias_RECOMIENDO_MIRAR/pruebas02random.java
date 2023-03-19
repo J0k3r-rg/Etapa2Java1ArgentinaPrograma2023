@@ -1,8 +1,11 @@
-package Guia00PruebasMias;
+package Guia00PruebasMias_RECOMIENDO_MIRAR;
 
 import java.util.Random;
 /**
- *
+ * A CONTINUACION VEREMOS LAS PRUEBAS QUE EH REALIZADO CON EL METODO RANDOM, 
+ * LEER BIEN LOS COMENTARIOS POR QUE HAY COSAS IMPORTANTES EN ELLOS ESPERO QUE 
+ * PUEDAN INTERPRETAR LO ESCRITO. GRACIAS POR LEER ESTO
+ * 
  * @author j0k3r.rg
  */
 public class pruebas02random {
